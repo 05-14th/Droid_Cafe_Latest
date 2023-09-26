@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.droidcafe.MainActivity">
+    <item
+        android:id="@+id/action_contact"
+        android:orderInCategory="100"
+        android:title= "@string/contact"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_order"
+        android:orderInCategory="100"
+        android:title= "@string/order_"
+        android:icon = "@drawable/ic_shopping_cart"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_status"
+        android:orderInCategory="100"
+        android:title= "@string/status"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_shopping_info"/>
+
+    <item
+        android:id="@+id/action_favorites"
+        android:orderInCategory="100"
+        android:title= "@string/favorites"
+        app:showAsAction="always"
+        android:icon = "@drawable/ic_shopping_heart"
+        />
+</menu>
