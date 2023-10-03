@@ -75,6 +75,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void displayToast(String message) {
+        Intent intent = new Intent(this, OrderActivity.class);
+        intent.putExtra("textData", message);
+        startActivity(intent);
         Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
     }
 
