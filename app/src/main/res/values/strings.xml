@@ -79,4 +79,20 @@
     <string name="action_status_message">You selected Status.</string>
     <string name="action_favorites_message">You selected Favorites.</string>
     <string name="action_contact_message">You selected Contact.</string>
+    <string name="hello_world_tap_to_test_the_alert">Hello World! Tap to test the alert:</string>
+    <string name="alert">Alert</string>
+    <string name="alert_title">Alert</string>
+    <string name="click_ok_to_continue_or_cancel_to_stop">Click OK to continue, or Cancel to stop:</string>
+    <string name="ok_button">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="hello_world_choose_a_date">Hello World! Choose a date:</string>
+    <string name="date">Date</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="date_">"Date: "</string>
+    <string name="these_are_the_top_stories">These are the top stories:</string>
+    <string name="top_stories">Top Stories</string>
+    <string name="tech_news">Tech News</string>
+    <string name="cooking">Cooking</string>
+    <string name="beta">Beta</string>
 </resources>

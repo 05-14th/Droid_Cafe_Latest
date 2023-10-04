@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this, OrderActivity.class);
             intent.putExtra("textData", mOrderMessage);
             startActivity(intent);
+            finish();
             return true;
         } else if(id == R.id.action_status){
             displayToast(getString(R.string.action_status_message));
@@ -69,6 +70,18 @@ public class MainActivity extends AppCompatActivity {
             return true;
         } else if (id == R.id.action_contact) {
             displayToast(getString(R.string.action_contact_message));
+            return true;
+        } else if(id == R.id.action_alert){
+            Intent alertIntent = new Intent(this, AlertActivity.class);
+            startActivity(alertIntent);
+            return true;
+        } else if(id == R.id.action_picker) {
+            Intent pickerIntent = new Intent(this, PickerActivity.class);
+            startActivity(pickerIntent);
+            return true;
+        } else if (id == R.id.beta_test) {
+            Intent betaIntent = new Intent(this, TabActivity.class);
+            startActivity(betaIntent);
             return true;
         }
         return super.onOptionsItemSelected(item);
@@ -84,6 +97,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, OrderActivity.class);
         intent.putExtra("textData", mOrderMessage);
         startActivity(intent);
+        finish();
     }
 
     public void showIceCreamOrder(View view) {
@@ -92,6 +106,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, OrderActivity.class);
         intent.putExtra("textData", mOrderMessage);
         startActivity(intent);
+        finish();
     }
 
     public void onFroyoOrder(View view) {
@@ -100,11 +115,13 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, OrderActivity.class);
         intent.putExtra("textData", mOrderMessage);
         startActivity(intent);
+        finish();
     }
 
     public void onClick(View view){
         Intent intent = new Intent(MainActivity.this, OrderActivity.class);
         intent.putExtra("textData", mOrderMessage);
         startActivity(intent);
+        finish();
     }
 }

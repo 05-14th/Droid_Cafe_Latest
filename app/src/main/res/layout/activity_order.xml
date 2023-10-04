@@ -6,12 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".OrderActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="#00FFA6"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Order Activity"
+        app:titleMarginStart="70dp"
+        app:titleTextColor="#000000" />
+
     <TextView
         android:id="@+id/order_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="76dp"
         android:padding="8dp"
         android:text="@string/order"
         app:layout_constraintStart_toStartOf="parent"
@@ -167,5 +182,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/phone_text"
         app:layout_constraintTop_toBottomOf="@id/address_text" />
+
+    <ImageButton
+        android:id="@+id/back_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:backgroundTint="#00FFA6"
+        android:onClick="returnHome"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

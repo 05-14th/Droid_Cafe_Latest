@@ -19,7 +19,13 @@
         android:theme="@style/Theme.DroidCafe"
         tools:targetApi="31" >
         <activity
-            android:name=".MainActivity2"
+            android:name=".AlertActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TabActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PickerActivity"
             android:exported="false" />
         <activity
             android:name=".OrderActivity"

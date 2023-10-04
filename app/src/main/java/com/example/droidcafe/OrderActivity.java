@@ -9,6 +9,7 @@ import android.view.inputmethod.EditorInfo;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
@@ -20,6 +21,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class OrderActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     private TextView orderText;
     private EditText phoneEdit;
+    private ImageButton backButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,8 +52,6 @@ public class OrderActivity extends AppCompatActivity implements AdapterView.OnIt
                 return false;
             }
         });
-
-
     }
 
 
@@ -98,6 +98,12 @@ public class OrderActivity extends AppCompatActivity implements AdapterView.OnIt
                 startActivity(intent);
             }
         }
+    }
+
+    public void returnHome(View view){
+        Intent homeIntent = new Intent(this, MainActivity.class);
+        startActivity(homeIntent);
+        finish();
     }
 
 
