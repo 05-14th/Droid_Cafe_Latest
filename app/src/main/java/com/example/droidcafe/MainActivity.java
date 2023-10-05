@@ -70,6 +70,9 @@ public class MainActivity extends AppCompatActivity {
             return true;
         } else if (id == R.id.action_contact) {
             displayToast(getString(R.string.action_contact_message));
+        } else if (id == R.id.action_account) {
+            Intent accountIntent = new Intent(this, AccountActivity.class);
+            startActivity(accountIntent);
             return true;
         } else if(id == R.id.action_alert){
             Intent alertIntent = new Intent(this, AlertActivity.class);

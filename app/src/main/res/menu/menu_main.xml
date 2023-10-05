@@ -13,6 +13,12 @@
         app:showAsAction="never" />
 
     <item
+        android:id="@+id/action_account"
+        android:icon="@drawable/ic_account"
+        android:orderInCategory="102"
+        android:title="@string/account"
+        app:showAsAction="always" />
+    <item
         android:id="@+id/action_order"
         android:orderInCategory="100"
         android:title= "@string/order_"
@@ -36,10 +42,10 @@
 
     <item
         android:id="@+id/action_alert"
-        android:orderInCategory="102"
+        android:orderInCategory="103"
         android:title="@string/alert" />
     <item
         android:id="@+id/action_picker"
-        android:orderInCategory="103"
+        android:orderInCategory="104"
         android:title="@string/date" />
 </menu>

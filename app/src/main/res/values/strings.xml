@@ -95,4 +95,9 @@
     <string name="tech_news">Tech News</string>
     <string name="cooking">Cooking</string>
     <string name="beta">Beta</string>
+    <string name="these_are_the_tech_news">These are the tech news:</string>
+    <string name="these_are_the_cooking">These are the cooking:</string>
+    <string name="title_activity_account">AccountActivity</string>
+    <string name="menu_bar">Menu_Bar</string>
+    <string name="account">Account</string>
 </resources>
